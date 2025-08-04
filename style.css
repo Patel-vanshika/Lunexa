@@ -1,0 +1,40 @@
+ 
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+        
+        :root {
+            --primary: #e2b8a4;
+            --secondary: #4a3341;
+            --accent: #d9866d;
+            --light: #f8f1ee;
+            --dark: #2a1e28;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .navbar {
+            background-color: rgba(248, 241, 238, 0.95);
+            backdrop-filter: blur(8px);
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(42, 30, 40, 0.7), rgba(42, 30, 40, 0.7));
+            background-image: url("brand.png") no-repeat center center/cover;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .contact-input:focus {
+            outline: none;
+            border-color: var(--accent);
+        }

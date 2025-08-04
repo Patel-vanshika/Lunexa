@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUNEXA - Premium Cosmetic Essentials</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <!-- <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+        
+        :root {
+            --primary: #e2b8a4;
+            --secondary: #4a3341;
+            --accent: #d9866d;
+            --light: #f8f1ee;
+            --dark: #2a1e28;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .navbar {
+            background-color: rgba(248, 241, 238, 0.95);
+            backdrop-filter: blur(8px);
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(42, 30, 40, 0.7), rgba(42, 30, 40, 0.7));
+            background-image: url("brand.png") no-repeat center center/cover;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .contact-input:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+    </style> -->
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar fixed w-full z-50 shadow-md">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-3xl font-bold text-secondary">LUNEXA</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-secondary hover:text-accent transition">Home</a>
+                    <a href="#skincare" class="text-secondary hover:text-accent transition">Skincare</a>
+                    <a href="#makeup" class="text-secondary hover:text-accent transition">Makeup</a>
+                    <a href="#fragrance" class="text-secondary hover:text-accent transition">Fragrance</a>
+                    <a href="#contact" class="text-secondary hover:text-accent transition">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-secondary focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="md:hidden hidden mt-4">
+                <a href="#home" class="block py-2 text-secondary hover:text-accent">Home</a>
+                <a href="#skincare" class="block py-2 text-secondary hover:text-accent">Skincare</a>
+                <a href="#makeup" class="block py-2 text-secondary hover:text-accent">Makeup</a>
+                <a href="#fragrance" class="block py-2 text-secondary hover:text-accent">Fragrance</a>
+                <a href="#contact" class="block py-2 text-secondary hover:text-accent">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero h-screen flex items-center text-white pt-20">
+        <div class="container mx-auto px-6 text-center md:text-left">
+            <div class="max-w-2xl">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6">LUNEXA</h1>
+                <h1 class="text-5xl md:text-6xl font-bold mb-6">Elevate Your Beauty Routine</h1>
+                <p class="text-xl mb-8">Discover LUNEXA's premium collection of skincare, makeup, and fragrance designed for modern elegance.</p>
+                <button class="bg-accent hover:bg-opacity-90 text-white px-8 py-3 rounded-full text-lg font-medium transition">
+                    Shop Now
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="bestseller" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Bestsellers</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <!-- <div class="product-card bg-light p-6 rounded-lg transition duration-300">
+                    <div class="product-image mb-4 overflow-hidden rounded-lg">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a7250fa8-ce87-4bc8-9c5b-d057917171d1.png" alt="LUNEXA Radiant Day Cream in minimalist white packaging with gold accents on marble surface" />
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Radiant Day Cream</h3>
+                    <p class="text-secondary mb-4">Hydrating protection with SPF 30 for all-day radiance</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-lg">$42.00</span>
+                        <button class="bg-accent text-white px-4 py-2 rounded-full text-sm">Add to Cart</button>
+                    </div>
+                </div> -->
+
+                 <!-- Product 1 -->
+                    <div class="product-card bg-light p-6 rounded-lg transition duration-300">
+                    <div class="product-image mb-4 overflow-hidden rounded-lg">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1cb6cb93-7294-41db-ba76-afda383822b7.png" alt="LUNEXA Radiant Day Cream in sleek purple packaging with gold accents" class="w-full h-full object-cover" />
+                    </div>
+                        <h3 class="text-xl font-semibold mb-2">LUNEXA Radiant Day Cream</h3>
+                        <p class="text-gray-700 mb-4">Provides 24-hour hydration while protecting against environmental stressors.</p>
+                             <div class="flex justify-between items-center">
+                        <span class="font-bold text-lg">₹ 400.00</span>
+                        <button class="bg-accent text-black px-4 py-2 rounded-full text-sm">Add to Cart</button>
+                        </div>
+                    </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card bg-light p-6 rounded-lg transition duration-300">
+                    <div class="product-image mb-4 overflow-hidden rounded-lg">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ba649478-c26b-49b0-965a-bb6264e4ef54.png" alt="LUNEXA Midnight Renewal Serum in sleek dark blue bottle with dropper on wooden surface" />
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">LUNEXA Midnight Renewal Serum</h3>
+                    <p class="text-secondary mb-4">Nighttime repair with hyaluronic acid and peptides</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-lg">₹ 940.00</span>
+                        <button class="bg-accent text-black px-4 py-2 rounded-full text-sm">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card bg-light p-6 rounded-lg transition duration-300">
+                    <div class="product-image mb-4 overflow-hidden rounded-lg">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/34ac97b9-6c0b-469b-aebd-23572b562d48.png" alt="LUNEXA Velvet Matte Lipstick in rose gold packaging displayed on hand with elegant manicure" />
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Velvet Matte Lipstick</h3>
+                    <p class="text-secondary mb-4">Long-wearing pigment with creamy, comfortable finish</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-lg">₹ 280.00</span>
+                        <button class="bg-accent text-black px-4 py-2 rounded-full text-sm">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skincare Section -->
+    <section id="skincare" class="py-16 bg-light">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Skincare Essentials</h2>
+                <p class="max-w-2xl mx-auto">Nourish and protect your skin with our dermatologist-approved formulas</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Product 1 -->
+                     <div class="product-card bg-white p-4 rounded-lg transition duration-300">
+                    <div class="product-image mb-4 overflow-hidden rounded-lg">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1cb6cb93-7294-41db-ba76-afda383822b7.png" alt="LUNEXA Radiant Day Cream in sleek purple packaging with gold accents" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">LUNEXA Radiant Day Cream</h3>
+                        <p class="text-gray-600 mb-4">SPF 30 • Hydrates & Protects</p>
+                        <p class="text-gray-700 mb-4">Our lightweight day cream provides 24-hour hydration while protecting against environmental stressors with antioxidants and broad-spectrum SPF 30.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold">₹ 400.00</span>
+                            <button class="bg-accent text-black px-3 py-1 rounded-full text-xs">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/bf270136-00c1-446c-9893-77ff63b3c846.png" alt="LUNEXA Purifying Cleansing Oil in minimalist purple bottle with dropper" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">LUNEXA Purifying Cleansing Oil</h3>
+                        <p class="text-gray-600 mb-4">Gentle • Effective</p>
+                        <p class="text-gray-700 mb-4">Our plant-based cleansing oil effectively dissolves makeup and impurities while nourishing skin with jojoba oil and vitamin E, leaving skin balanced and never stripped.</p>
+                        <div class="flex justify-between items-center">
+                               <span class="font-bold">₹ 600.00</span>
+                            <button class="bg-accent text-black px-3 py-1 rounded-full text-xs">Add to Cart</button>
+                        </div>
+                    </div>
+                </div> 
+                
+                <!-- Product 3
+                <div class="product-card bg-white p-4 rounded-lg transition duration-300">
+                    <div class="product-image mb-4 overflow-hidden rounded-lg">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/39363846-1287-4ab6-b744-751a48f38227.png" alt="LUNEXA Deep Cleanse Oil in clear bottle with pump dispenser showing golden oil inside, placed on white surface" />
+                    </div>
+                    <h3 class="font-semibold mb-2">Deep Cleanse Oil</h3>
+                    <p class="text-sm text-gray-600 mb-3">Our plant-based cleansing oil effectively dissolves makeup and impurities while nourishing skin with jojoba oil and vitamin E, leaving skin balanced and never stripped.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold">$36.00</span>
+                        <button class="bg-accent text-white px-3 py-1 rounded-full text-xs">Add to Cart</button>
+                    </div>
+                </div> -->
+                
+                <!-- Product 3 -->
+                <div class="product-card bg-white p-4 rounded-lg transition duration-300">
+                    <div class="product-image mb-4 overflow-hidden rounded-lg">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3c264c9b-d8ad-4469-bddf-ee71c3eedd06.png" alt="LUNEXA Hydra-Gel Moisturizer in frosted glass jar with silver lid, surrounded by fresh aloe leaves" />
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">LUNEXA Hydra-Gel Moisturizer</h3>
+                    <p class="text-gray-600 mb-4">Gentle • Oil-Free</p>
+                    <p class="text-sm text-gray-600 mb-3">LUNEXA Hydra-Gel Moisturizer delivers deep, long-lasting hydration with a lightweight, fast-absorbing formula. Enriched with hyaluronic acid and botanical extracts, it revitalizes and soothes for a fresh, dewy glow</p>
+                    <div class="flex justify-between items-center">
+                         <span class="font-bold">₹ 450.00</span>
+                            <button class="bg-accent text-black px-3 py-1 rounded-full text-xs">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Product 4
+                <div class="product-card bg-white p-4 rounded-lg transition duration-300">
+                    <div class="product-image mb-4 overflow-hidden rounded-lg">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b32b0a7c-bae3-4304-8ad6-53207ef53b02.png" alt="LUNEXA Brightening Eye Cream in silver tube with precision applicator, placed on marble surface" />
+                    </div>
+                    <h3 class="font-semibold mb-2">Brightening Eye Cream</h3>
+                    <p class="text-sm text-gray-600 mb-3">Targeted treatment for dark circles and puffiness</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold">$38.00</span>
+                        <button class="bg-accent text-white px-3 py-1 rounded-full text-xs">Add to Cart</button>
+                    </div>
+                </div> -->
+
+                 <!-- Product 4 -->
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/bb940fee-d6e2-4d98-83b0-6210911ee2f5.png" alt="LUNEXA Eye Contour Cream in sleek silver tube with cooling applicator" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">LUNEXA Eye Contour Cream</h3>
+                        <p class="text-gray-600 mb-4">De-Puff • Brighten</p>
+                        <p class="text-gray-700 mb-4">Our cooling eye cream with caffeine and tetrapeptides reduces puffiness and dark circles while smoothing fine lines with its lightweight yet moisturizing formula.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold">₹ 690.00</span>
+                            <button class="bg-accent text-black px-3 py-1 rounded-full text-xs">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 5 -->
+                 <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/41e9113c-7c2a-45b6-9592-b0cc1227fc49.png" alt="LUNEXA Glow Serum in frosted glass bottle with gold pump dispenser" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">LUNEXA Illuminating Serum</h3>
+                        <p class="text-gray-600 mb-4">Brighten & Even</p>
+                        <p class="text-gray-700 mb-4">This potent vitamin C serum helps fade dark spots and improves skin radiance with 10% stable vitamin C, niacinamide, and licorice root extract.</p>
+                        <div class="flex justify-between items-center">
+                             <span class="font-bold">₹ 999.00</span>
+                            <button class="bg-accent text-black px-3 py-1 rounded-full text-xs">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6f89a24f-fae3-45e8-a905-2d3c33b0ffc9.png" alt="LUNEXA Renewal Night Cream in elegant purple jar with luxury applicator" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">LUNEXA Renewal Night Cream</h3>
+                        <p class="text-gray-600 mb-4">Repair & Replenish</p>
+                        <p class="text-gray-700 mb-4">This rich formulation works overnight with retinol alternatives and peptides to accelerate skin renewal while you sleep, waking up to visibly refreshed skin.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold">₹ 400.00</span>
+                            <button class="bg-accent text-black px-3 py-1 rounded-full text-xs">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1c8c348a-4ec6-41f3-a6d7-c0b74561b300.png" alt="LUNEXA Exfoliating Mask in purple jar with luxurious texture visible" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">LUNEXA Reveal Exfoliating Mask</h3>
+                        <p class="text-gray-600 mb-4">Gentle Resurfacing</p>
+                        <p class="text-gray-700 mb-4">This weekly treatment mask combines enzymatic and physical exfoliation to reveal brighter, smoother skin without irritation, suitable for even sensitive skin types.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold">₹ 850.00</span>
+                            <button class="bg-accent text-black px-3 py-1 rounded-full text-xs">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                  <!-- Product 8 -->
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ba649478-c26b-49b0-965a-bb6264e4ef54.png" alt="LUNEXA Midnight Renewal Serum in sleek dark blue bottle with dropper on wooden surface" />
+                    </div>
+                     <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">LUNEXA Midnight Renewal Serum</h3>
+                   <p class="text-gray-700 mb-4">Midnight Renewal Serum is a restorative night treatment that boosts skin's natural repair process while you sleep. Infused with powerful antioxidants and hydration, it leaves skin visibly smoother, firmer, and more radiant by morning.</p>
+                    <div class="flex justify-between items-center">
+                         <span class="font-bold">₹ 940.00</span>
+                            <button class="bg-accent text-black px-3 py-1 rounded-full text-xs">Add to Cart</button>
+                            </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- Makeup Section -->
+    <section id="makeup" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Makeup Collection</h2>
+                <p class="max-w-2xl mx-auto">Flawless, long-lasting formulas for a polished look</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Product 1 -->
+                <div class="product-card bg-light p-4 rounded-lg transition duration-300">
+                    <div class="product-image mb-4 overflow-hidden rounded-lg">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5d84beed-aae4-4449-a7ab-83c711f38eb2.png" alt="LUNEXA Featherlight Foundation in sleek silver bottle with pump, shown in different shades on arm swatches" />
+                    </div>
+                    <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Featherlight Foundation</h3>
+                   <p class="text-gray-600 mb-4">Buildable coverage, natural finish</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold">₹ 400.00</span>
+                        <button class="bg-accent text-white px-3 py-1 rounded-full text-xs">Add to Cart</button>
+                    </div>
+                </div>
+                </div>
+
+                  <!-- Product 2 -->
+                        <div class="product-card bg-light p-4 rounded-lg transition duration-300">
+                    <div class="product-image mb-4 overflow-hidden rounded-lg">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/36f68c33-54c9-470f-a3b3-51a970534a97.png" alt="LUNEXA Skin Tint Foundation in frosted glass bottle with pump dispenser" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Skin Tint Foundation</h3>
+                        <p class="text-gray-600 mb-4">Lightweight, Skin-like</p>
+                        <div class="flex justify-between items-center">
+                        <span class="font-bold">₹ 420.00</span>
+                        <button class="bg-accent text-white px-3 py-1 rounded-full text-xs">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card bg-light p-4 rounded-lg transition duration-300">
+                    <div class="product-image mb-4 overflow-hidden rounded-lg">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6df97141-7124-4e84-9c1c-5aa4dfd943b2.png" alt="LUNEXA Cream Blush Palette with six delicate shades in matte and shimmer finishes, open on marble table" />
+                    </div>
+                      <h3 class="text-xl font-semibold text-gray-800 mb-2">Cream Blush Palette</h3>
+                   <p class="text-gray-600 mb-4">Six versatile shades for every look</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold">₹ 360.00 </span>
+                        <button class="bg-accent text-white px-3 py-1 rounded-full text-xs">Add to Cart</button>
+                    </div>
+                </div>
+
+                   <!-- Product 4  -->
+                <div class="product-card bg-light p-4 rounded-lg transition duration-300">
+                    <div class="product-image mb-4 overflow-hidden rounded-lg">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c3584580-76db-4754-a824-5d6f904464e7.png" alt="LUNEXA Luminous Powder Palette with four highlight shades in gold compact" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Luminizer Palette</h3>
+                        <p class="text-gray-600 mb-4">Glow, Sculpt, Define</p>
+                        <div class="flex justify-between items-center">
+                        <span class="font-bold">₹ 500.00 </span>
+                        <button class="bg-accent text-white px-3 py-1 rounded-full text-xs">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 5 -->
+              <div class="product-card bg-light p-4 rounded-lg transition duration-300">
+                    <div class="product-image mb-4 overflow-hidden rounded-lg">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/83f41100-9612-4f9f-ad46-76e81aff6e36.png" alt="LUNEXA Infinite Length Mascara in gold and black tube with hourglass-shaped wand, placed next to open eye demo" />
+                    </div>
+                    <div class="p-6">
+                     <h3 class="text-xl font-semibold text-gray-800 mb-2">Infinite Length Mascara</h3>
+                    <p class="text-gray-600 mb-4">Clump-free volume and definition</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold">₹ 230.00 </span>
+                        <button class="bg-accent text-white px-3 py-1 rounded-full text-xs">Add to Cart</button>
+                    </div>
+                </div>
+                </div>
+
+              
+                
+                <!-- Product 6 -->
+                <div class="product-card bg-light p-4 rounded-lg transition duration-300">
+                    <div class="product-image mb-4 overflow-hidden rounded-lg">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1988b235-caf4-4b35-9e3a-5b7dd72699ca.png" alt="LUNEXA Precision Brow Pencil with spooley in dual-ended taupe packaging, shown creating hair-like strokes" />
+                    </div>
+                     <h3 class="text-xl font-semibold text-gray-800 mb-2">Precision Brow Pencil</h3>
+                    <p class="text-gray-600 mb-4">Natural-looking brow definition</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold">₹ 200.00 </span>
+                        <button class="bg-accent text-white px-3 py-1 rounded-full text-xs">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                 <div class="product-card bg-light p-4 rounded-lg transition duration-300">
+                    <div class="product-image mb-4 overflow-hidden rounded-lg">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/34ac97b9-6c0b-469b-aebd-23572b562d48.png" alt="LUNEXA Velvet Matte Lipstick in rose gold packaging displayed on hand with elegant manicure" />
+                    </div>
+                     <h3 class="text-xl font-semibold text-gray-800 mb-2">Velvet Matte Lipstick</h3>
+                    <p class="text-gray-600 mb-4">Long-wearing pigment with creamy, comfortable finish</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold">₹ 280.00 </span>
+                        <button class="bg-accent text-white px-3 py-1 rounded-full text-xs">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+           <div class="product-card bg-light p-4 rounded-lg transition duration-300">
+                    <div class="product-image mb-4 overflow-hidden rounded-lg">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d5cddad4-57c2-43d6-b7bc-7ab789afcb33.png" alt="LUNEXA Liquid Blush in frosted glass bottle with dropper dispenser" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Dew Blush</h3>
+                        <p class="text-gray-600 mb-4">Buildable, Long-wearing</p>
+                        <div class="flex justify-between items-center">
+                        <span class="font-bold">₹ 540.00 </span>
+                        <button class="bg-accent text-white px-3 py-1 rounded-full text-xs">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Fragrance Section -->
+    <section id="fragrance" class="py-16 bg-light">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Signature Fragrances</h2>
+                <p class="max-w-2xl mx-auto">Captivating scents that linger beautifully</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Product 1 -->
+                <div class="product-card bg-white p-6 rounded-lg transition duration-300">
+                    <div class="product-image mb-4 overflow-hidden rounded-lg">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a9107f4b-ab87-42ec-bff8-b9e674fb89c4.png" alt="LUNEXA Luminous Eau de Parfum in delicate frosted glass bottle with gold collar, surrounded by white peony flowers" />
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Luminous</h3>
+                    <p class="text-secondary mb-4">Top: Bergamot, Pink Pepper<br>
+                    Heart: Peony, Violet<br>
+                    Base: Sandalwood, Musk</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-lg">₹ 780.00</span>
+                        <button class="bg-accent text-white px-4 py-2 rounded-full text-sm">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card bg-white p-6 rounded-lg transition duration-300">
+                    <div class="product-image mb-4 overflow-hidden rounded-lg">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5691d2dd-4d84-468a-ab1d-247320e6f1d8.png" alt="LUNEXA Noir Eau de Parfum in elegant black glass bottle with silver accents, resting on dark velvet" />
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Noir</h3>
+                    <p class="text-secondary mb-4">Top: Black Currant, Saffron<br>
+                    Heart: Rose, Oud<br>
+                    Base: Amber, Vanilla</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-lg">₹ 880.00</span>
+                        <button class="bg-accent text-white px-4 py-2 rounded-full text-sm">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card bg-white p-6 rounded-lg transition duration-300">
+                    <div class="product-image mb-4 overflow-hidden rounded-lg">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b1a858b5-971c-4edb-acfa-cbfb8fdd40ef.png" alt="LUNEXA Solis Eau de Parfum in radiant amber glass bottle, shown with citrus fruits and tropical leaves" />
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Solis</h3>
+                    <p class="text-secondary mb-4">Top: Blood Orange, Ginger<br>
+                    Heart: Coconut, Jasmine<br>
+                    Base: Driftwood, Salt</p>
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-lg">₹ 820.00</span>
+                        <button class="bg-accent text-white px-4 py-2 rounded-full text-sm">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                 <div class="product-card bg-white p-6 rounded-lg transition duration-300">
+                    <div class="product-image mb-4 overflow-hidden rounded-lg">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e45ed943-5133-49e3-b5d6-4c004ad81b49.png" alt="LUNEXA Elixir perfume bottle in purple glass with gold cap on marble surface" class="w-full h-full object-cover" />
+                    </div>
+                    
+                        <h3 class="text-xl font-semibold mb-2">Elixir</h3>
+                        <p class="text-secondary mb-4">Top: Floral-Oriental, Vanilla   <br>
+                        Heart: Bulgarian Rose, Sambac Jasmine <br>
+                        Base: Sandalwood, Amber</p>
+                        <p class="text-gray-700 mb-4">A captivating blend of Bulgarian rose, Sambac jasmine, and vanilla absolute, balanced with warm amber and sandalwood for a timeless floral-oriental composition.</p>
+                        <div class="flex justify-between items-center">
+                        <span class="font-bold text-lg">₹ 880.00</span>
+                        <button class="bg-accent text-white px-4 py-2 rounded-full text-sm">Add to Cart</button>
+                        </div>
+                    
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-secondary text-black">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/de7568ea-d918-40da-bac3-582096564bc2.png" alt="LUNEXA laboratory with scientists in white coats carefully formulating products with natural ingredients" class="rounded-lg shadow-xl" />
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6">Our Philosophy</h2>
+                    <p class="mb-4">At LUNEXA, we believe beauty should be effortless yet transformative. Our formulas combine cutting-edge science with consciously-sourced ingredients to deliver visible results without compromise.</p>
+                    <p class="mb-6">Every product is dermatologist-tested, cruelty-free, and developed with your skin's health as the priority.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-leaf text-accent mr-2"></i>
+                            <span>Clean Ingredients</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-heart text-accent mr-2"></i>
+                            <span>Cruelty-Free</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-recycle text-accent mr-2"></i>
+                            <span>Eco-Conscious</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">What Our Customers Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-light p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="mb-4">"The Midnight Renewal Serum transformed my skin. I wake up looking refreshed even after late nights."</p>
+                    <div class="flex items-center">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0b750bc9-900a-4871-aed1-2ab52ee7a0ba.png" alt="Portrait of satisfied customer Sarah J. with glowing skin" class="w-10 h-10 rounded-full mr-3" />
+                        <div>
+                            <p class="font-semibold">Pradnya Ahire</p>
+                            <p class="text-sm text-gray-500">Verified Buyer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-light p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="mb-4">"Luminous has become my signature scent. I get compliments all day long!"</p>
+                    <div class="flex items-center">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0e7a41f3-e48b-43e1-afe4-91edd439b33c.png" alt="Portrait of happy customer Michaela T. wearing elegant makeup" class="w-10 h-10 rounded-full mr-3" />
+                        <div>
+                            <p class="font-semibold">Sayali Yekehnde</p>
+                            <p class="text-sm text-gray-500">Verified Buyer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-light p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="mb-4">"The Featherlight Foundation is the first that doesn't settle into my fine lines. Game changer!"</p>
+                    <div class="flex items-center">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/63c74290-71ac-40e5-adaf-5d76733733a9.png" alt="Portrait of loyal customer Elena R. showing flawless makeup application" class="w-10 h-10 rounded-full mr-3" />
+                        <div>
+                            <p class="font-semibold">Sunita Bhandari</p>
+                            <p class="text-sm text-gray-500">Verified Buyer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="py-16 bg-light">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2 p-8 bg-secondary text-black">
+                        <h2 class="text-2xl font-bold mb-4">Get In Touch</h2>
+                        <p class="mb-6">Have questions about our products or need help with your order? Our team is here to help.</p>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-map-marker-alt text-accent mr-3"></i>
+                                <p>402, Manisha Legacy<br>Nashik, India</p>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-phone-alt text-accent mr-3"></i>
+                                <p>1234567890</p>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-envelope text-accent mr-3"></i>
+                                <p>abc123@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <form id="contactForm">
+                            <div class="mb-4">
+                                <label for="name" class="block text-gray-700 mb-2">Name</label>
+                                <input type="text" id="name" name="name" class="contact-input w-full px-4 py-2 border rounded-lg focus:border-accent" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-700 mb-2">Email</label>
+                                <input type="email" id="email" name="email" class="contact-input w-full px-4 py-2 border rounded-lg focus:border-accent" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="subject" class="block text-gray-700 mb-2">Subject</label>
+                                <input type="text" id="subject" name="subject" class="contact-input w-full px-4 py-2 border rounded-lg focus:border-accent" required>
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-700 mb-2">Message</label>
+                                <textarea id="message" name="message" rows="4" class="contact-input w-full px-4 py-2 border rounded-lg focus:border-accent" required></textarea>
+                            </div>
+                            <button type="submit" class="bg-accent hover:bg-opacity-90 text-gray-500 px-6 py-2 rounded-full font-medium transition w-full">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-2xl font-bold mb-4">Join Our Community</h2>
+            <p class="max-w-lg mx-auto mb-6">Subscribe to receive exclusive offers, beauty tips, and early access to new releases.</p>
+            <form class="flex flex-col md:flex-row max-w-md mx-auto">
+                <input type="email" placeholder="Your email address" class="flex-grow px-4 py-2 border rounded-l-lg focus:outline-none focus:border-accent mb-2 md:mb-0">
+                <button type="submit" class="bg-accent hover:bg-opacity-90 text-white px-6 py-2 rounded-r-lg md:rounded-l-none font-medium transition">
+                    Subscribe
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-gray-800 py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">LUNEXA</h3>
+                    <p class="mb-4">Premium cosmetics for the modern individual who values both performance and purity.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-white transition"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="hover:text-white transition"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Shop</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#skincare" class="hover:text-accent transition">Skincare</a></li>
+                        <li><a href="#makeup" class="hover:text-accent transition">Makeup</a></li>
+                        <li><a href="#fragrance" class="hover:text-accent transition">Fragrance</a></li>
+                        <li><a href="#bestseller" class="hover:text-accent transition">Bestsellers</a></li>
+                        <li><a href="#home" class="hover:text-accent transition">New Arrivals</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Help</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="hover:text-accent transition">FAQs</a></li>
+                        <li><a href="#home" class="hover:text-accent transition">Shipping & Returns</a></li>
+                        <li><a href="#home" class="hover:text-accent transition">Track Order</a></li>
+                        <li><a href="#contact" class="hover:text-accent transition">Contact Us</a></li>
+                        <li><a href="#home" class="hover:text-accent transition">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">About</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="hover:text-accent transition">Our Story</a></li>
+                        <li><a href="#about" class="hover:text-accent transition">Ingredients</a></li>
+                        <li><a href="#home" class="hover:text-accent transition">Sustainability</a></li>
+                        <li><a href="#home" class="hover:text-accent transition">Blog</a></li>
+                        <li><a href="#home" class="hover:text-accent transition">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-500 mt-12 pt-8 text-sm text-gray-800 text-center">
+                <p>© 2023 LUNEXA Cosmetics. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Contact form submission
+        const contactForm = document.getElementById('contactForm');
+        
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            // Here you would typically send the form data to a server
+            console.log({ name, email, subject, message });
+            
+            // Show success message
+            alert('Thank you for your message! We will get back to you soon.');
+            
+            // Reset form
+            contactForm.reset();
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script> -->
+</body>
+</html>
+
